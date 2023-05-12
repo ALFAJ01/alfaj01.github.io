@@ -1,2 +1,3 @@
 # alfaj01.github.io
-finally got website
+for fun
+cntack alexXVR in insta
