@@ -1,3 +1,3 @@
 # alfaj01.github.io
-for fun
-cntack alexXVR in insta
+Fo4 fun
+Contack AlexXVR [ @IA_XVR ] on Instagram
