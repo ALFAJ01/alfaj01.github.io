@@ -14,10 +14,10 @@ body {
   background-size: 100vh 100vh;
   background-size: cover;
   z-index: -1;
-  animation: untoldcoding 55s infinite ease-in-out;
+  animation: soulhacker 55s infinite ease-in-out;
 }
 
-@keyframes untoldcoding {
+@keyframes soulhacker {
   0% {
     background-image: url("propse.webp");
   }
@@ -39,6 +39,6 @@ body {
   height: 100%;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #806000; /* Dark red color, you can adjust the color code */
   font-family: cursive;
 }
