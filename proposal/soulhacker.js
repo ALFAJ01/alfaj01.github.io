@@ -13,11 +13,15 @@ function typeWriter() {
     else if (txt1.charAt(i) == "|") {
       $(".bg_heart").css("background-image", "");
       // Call askForAcceptance after typing animation is complete
-      setTimeout(askForAcceptance, 500); // Adjust the delay as needed
+      typeWriterCallback(askForAcceptance);
     } else document.getElementById("text1").innerHTML += txt1.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
+}
+
+function typeWriterCallback(callback) {
+  setTimeout(callback, speed);
 }
 
 function askForAcceptance() {
