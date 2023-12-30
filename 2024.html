@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Year 2024 @Mr.SoulHAcker</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #7d32f7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: "Architects Daughter", cursive;
+        }
+
+        .new-year img {
+            width: 140px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .card {
+            perspective: 1500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform-origin: center;
+            transform: translate(-50%, -50%);
+            transition: transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            animation: cardIn 1s alternate cubic-bezier(0.87, -0.41, 0.19, 1.44);
+        }
+
+        .card:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 500px #000;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .card.is-opened {
+            transform: rotate(0deg) translate(-10px, -120px);
+        }
+
+        .card.is-opened .cart-page-front {
+            transform: rotateY(-180deg);
+        }
+
+        @keyframes cardIn {
+            0% {
+                opacity: 0;
+                transform: rotate(0deg) translate(-50%, -100%);
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotate(0deg) translate(0, -10%);
+            }
+        }
+
+        .card,
+        .card-page {
+            width: 250px;
+            height: 350px;
+        }
+
+        .card-page {
+            transition: transform 1s ease-in-out;
+            cursor: pointer;
+            position: absolute;
+            outline: 1px solid transparent;
+        }
+
+        .cart-page-front {
+            transform-origin: 0 50% 0;
+            transform-style: preserve-3d;
+            transform: rotateY(-20deg);
+            z-index: 1;
+        }
+
+        .cart-page-outside,
+        .cart-page-inside {
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .cart-page-outside {
+            border: 10px solid #fbfbfb;
+            background-image: #fe9001 no-repeat center;
+            background-image: url(https://shorturl.at/auwI5);
+            background-size: cover;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cart-page-inside,
+        .cart-page-bottom {
+            background-color: #200581;
+            background-image: url("https://www.dropbox.com/s/8hw7guch8d151kg/pattern.png?raw=1");
+            border: 10px solid #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cart-page-inside {
+            transform: rotateY(-180deg);
+            background-position: 0px 80px;
+        }
+
+        .cart-page-bottom {
+            z-index: 1;
+            background-position: -22px 80px;
+        }
+
+        .cart-page-bottom .new-year img {
+            width: 200px;
+            height: auto;
+        }
+
+        p {
+            font-size: 20px;
+            color: #3c4a85;
+            margin-top: 5px;
+        }
+
+        #secondimg {
+            width: 250px;
+            height: 350px;
+        }
+
+        #msg {
+            color: white;
+            font-size: 20;
+            font-weight: bold;
+        }
+
+        .animated-image {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 567px) {
+            .card {
+                left: 50%;
+                top: 50%;
+            }
+
+            .card,
+            .card-page {
+                width: 160px;
+                height: 250px;
+            }
+
+            p {
+                font-size: 12px;
+                color: white;
+            }
+
+            .cart-page-bottom {
+                background-position: 85px 30px;
+            }
+
+            .cart-page-inside {
+                background-position: 0px 30px;
+            }
+
+            .cart-page-inside,
+            .cart-page-bottom {
+                border: 5px solid #f9f9f9;
+            }
+
+            .cart-page-outside {
+                border: 5px solid #fbfbfb;
+            }
+
+            .new-year img {
+                width: 100px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+
+            #secondimg {
+                width: 160px;
+                height: 250px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-page cart-page-front">
+            <div class="card-page cart-page-outside"></div>
+            <div class="card-page cart-page-inside">
+                <span class="new-year">
+                    <img src="./assets/newyear/new_year_1703691892001_1703865839721.avif" alt="Happy New Year 2024">
+                    <p id="msg">Wishing You an Amazing 2024 New Year!<br> My Dear Friends <br> ❤️As the new year unfolds,
+                        may your dreams take flight and reach new heights❤️</p>
+                </span>
+            </div>
+        </div>
+        <div class="sc-page">
+            <img id="secondimg" src="./assets/newyear/img.jpeg" alt="smtech">
+        </div>
+    </div>
+
+    <!-- Animated image in the bottom right corner -->
+    <div class="animated-image">
+        <img src="md.jpg" alt="Animated Image">
+    </div>
+
+    <script>
+        const elemCard = document.querySelector(".card");
+        const elemClickIcon = document.querySelector(".click-icon");
+        elemCard.addEventListener("click", function () {
+            elemCard.classList.toggle("is-opened");
+            elemClickIcon.classList.toggle("is-hidden");
+        });
+    </script>
+</body>
+
+</html>
