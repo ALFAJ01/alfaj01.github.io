@@ -32,7 +32,7 @@
             perspective: 1500px;
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 40%;
             transform-origin: center;
             transform: translate(-50%, -50%);
             transition: transform 2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -77,8 +77,8 @@
 
         .card,
         .card-page {
-            width: 400px;
-            height: 600px;
+            width: 450px;
+            height: 800px;
         }
 
         .card-page {
@@ -144,8 +144,8 @@
         }
 
         #secondimg {
-            width: 400px;
-            height: 600px;
+            width: 450px;
+            height: 800px;
         }
 
         #msg {
@@ -164,24 +164,11 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 200px; /* Adjust the width as needed */
-    height: 300px; /* Automatically adjust height to maintain aspect ratio */
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
     border-radius: 50%;
     animation: bounce 2s infinite;
 }
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-20px);
-    }
-    60% {
-        transform: translateY(-10px);
-    }
-}
-
 
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
@@ -198,13 +185,13 @@
         @media (max-width: 567px) {
             .card {
                 left: 50%;
-                top: 50%;
+                top: 40%;
             }
 
             .card,
             .card-page {
                 width: 160px;
-                height: 400px;
+                height: 450px;
             }
 
             p {
@@ -237,7 +224,7 @@
 
             #secondimg {
                 width: 160px;
-                height: 400px;
+                height: 450px;
             }
 
         }
