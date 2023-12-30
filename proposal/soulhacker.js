@@ -19,8 +19,7 @@ if (txt1.charAt(i) == ">") {
 if (txt1.charAt(i) == "|") {
       $(".bg_heart").css("background-image", "");
       i++; // Increment i before calling askForAcceptance
-      askForAcceptance(); // Call directly, no setTimeout
-      return; // Exit typeWriter to avoid nested timeouts
+      askForAcceptance(); // Call directly, no setTimeou
     } else {
       document.getElementById("text1").innerHTML += txt1.charAt(i);
       i++;
