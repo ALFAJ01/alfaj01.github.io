@@ -1,6 +1,6 @@
 var i = 0;
 var txt1 =
-  "Hi Love.....! << Now I want to say something special to you. <<< So , Please read everything carefully...! > When I saw you for the first time In A Ur Brother Status< You seemed something Special to me. << As the days go < you get closer to me from my side ....! << I don't know the reason why your thoughts always resonate inside my mind...! > Everything about you is always interesting for me But Honestly Something You need to Change too...! << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in the future...! > I Love my Parents so much than anything else in this world....! << Now You are the only person whom I love equally with my parents....! >I Love U <SweetHeart Mona 💕 .....! << Kept It Secret🔐.. by @محمد أفسارول الحق > |          . ";
+  "Hi Love.....! << Now I want to say something special to you. <<< So , Please read everything carefully...! > When I saw you for the first time In A Ur Brother Status< You seemed something Special to me. << As the days go < you get closer to me from my side ....! << I don't know the reason why your thoughts always resonate inside my mind...! > Everything about you is always interesting for me But Honestly Something You need to Change too...! << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in the future...! > I Love my Parents so much than anything else in this world....! << Now You are the only person whom I love equally with my parents....! >I Love U <SweetHeart Mona 💕 .....! << Kept It Secret🔐.. << By @محمد أفسارول الحق > |          . ";
 var speed = 55;
 
 typeWriter();
@@ -13,7 +13,7 @@ function typeWriter() {
       document.getElementById("text1").innerHTML = "";
     else if (txt1.charAt(i) == "|") {
       $(".bg_heart").css("background-image", "");
-      saskForAcceptance()
+      askForAcceptance()
     } else document.getElementById("text1").innerHTML += txt1.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
