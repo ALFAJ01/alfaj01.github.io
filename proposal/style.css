@@ -10,7 +10,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url("https://i.postimg.cc/1XcLrz2X/pexels-stanley-morales-1487076.jpg");
+  background-image: url("propse.webp");
   background-size: 100vh 100vh;
   background-size: cover;
   z-index: -1;
@@ -19,16 +19,16 @@ body {
 
 @keyframes untoldcoding {
   0% {
-    background-image: url("https://i.postimg.cc/1XcLrz2X/pexels-stanley-morales-1487076.jpg");
+    background-image: url("propse.webp");
   }
   25% {
-    background-image: url("https://i.postimg.cc/vBHgsPwZ/sunset-698501-1280.jpg");
+    background-image: url("accept.webp");
   }
   50% {
-    background-image: url(" https://i.postimg.cc/9Fq4CRKZ/candles-1645551-1280.jpg");
+    background-image: url("candle.webp");
   }
   80% {
-    background-image: url("https://i.postimg.cc/w3Kj72ZJ/rose-3407234-1280.jpg");
+    background-image: url("rose.webp");
   }
 }
 
