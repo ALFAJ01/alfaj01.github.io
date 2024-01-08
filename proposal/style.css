@@ -14,7 +14,7 @@ html, body {
   background-size: 100vh 100vh;
   background-size: cover;
   z-index: -1;
-  animation: soulhacker 74s infinite ease-in-out;
+  animation: soulhacker 75s infinite ease-in-out;
 }
 
 @keyframes soulhacker {
@@ -61,5 +61,5 @@ html, body {
   width: 100%;
   text-align: center;
   color: #806000; /* Dark red color, you can adjust the color code */
-  font-family: 'Foldit', cursive; /* Apply the new font style */
+  font-family: 'Roboto', sans-serif; /* Apply the new font style */
 }
