@@ -15,7 +15,7 @@ body {
  background-size: 100vh 100vh;
  background-size: cover;
  z-index: -1;
- animation: soulhacker 121s infinite ease-in-out;
+ animation: soulhacker 81s infinite ease-in-out;
 }
 
 @keyframes soulhacker {
