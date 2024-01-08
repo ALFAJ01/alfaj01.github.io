@@ -13,55 +13,50 @@ html, body {
   overflow: hidden;
   background-size: cover;
   z-index: -1;
-  animation: soulhacker 55s infinite ease-in-out;
+  animation: soulhacker 60s infinite ease-in-out;
 }
 
 @keyframes soulhacker {
   0%, 100% {
-    background-image: url("propse.webp");
+    background-position: top left;
   }
   10% {
-    background-image: url("accept.webp");
+    background-position: top right;
   }
   20% {
-    background-image: url("candle.webp");
+    background-position: bottom right;
   }
-  30% {
-    background-image: url("rose.webp");
+  30%, 40% {
+    background-position: bottom left;
   }
-  40% {
-    background-image: url("img1.jpg");
-  }
-  50% {
-    background-image: url("img2.jpg");
-  }
-  60% {
-    background-image: url("img3.jpg");
+  50%, 60% {
+    background-position: top left;
   }
   70% {
-    background-image: url("img4.jpg");
+    background-position: top right;
   }
   80% {
-    background-image: url("img5.jpg");
+    background-position: bottom right;
   }
-  90% {
-    background-image: url("img6.jpg");
+  90%, 100% {
+    background-position: bottom left;
   }
 }
 
 .container {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #806000;
-  font-family: 'Roboto', sans-serif;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px; /* Adjust the padding as needed */
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .bg_heart {
-    background-size: contain;
-    background-position: center;
-  }
+#text1 {
+  color: #806000;
+  font-family: 'Roboto', sans-serif;
 }
