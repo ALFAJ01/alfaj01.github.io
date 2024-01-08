@@ -13,7 +13,7 @@ html, body {
   overflow: hidden;
   background-size: cover;
   z-index: -1;
-  animation: soulhacker 60s infinite ease-in-out;
+  animation: soulhacker 55s infinite ease-in-out;
 }
 
 @keyframes soulhacker {
