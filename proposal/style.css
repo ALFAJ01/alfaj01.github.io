@@ -1,6 +1,7 @@
 html, body {
-  margin: 0px;
+  margin: 0;
   height: 100%;
+  overflow: hidden; /* Added overflow to prevent scroll bars */
 }
 
 .bg_heart {
@@ -14,11 +15,11 @@ html, body {
   background-size: 100vh 100vh;
   background-size: cover;
   z-index: -1;
-  animation: soulhacker 75s infinite ease-in-out;
+  animation: soulhacker 60s infinite ease-in-out; /* Adjusted the animation duration */
 }
 
 @keyframes soulhacker {
-  0% {
+  0%, 100% {
     background-image: url("propse.webp");
   }
   10% {
@@ -48,9 +49,6 @@ html, body {
   90% {
     background-image: url("img6.jpg");
   }
-  100% {
-    background-image: url("rose.webp");
-  }
 }
 
 .container {
@@ -60,6 +58,6 @@ html, body {
   height: 100%;
   width: 100%;
   text-align: center;
-  color: #806000; /* Dark red color, you can adjust the color code */
-  font-family: 'Roboto', sans-serif; /* Apply the new font style */
+  color: #806000;
+  font-family: 'Roboto', sans-serif;
 }
