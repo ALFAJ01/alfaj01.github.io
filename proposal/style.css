@@ -15,7 +15,7 @@ body {
  background-size: 100vh 100vh;
  background-size: cover;
  z-index: -1;
- animation: soulhacker 55s infinite ease-in-out;
+ animation: soulhacker 125s infinite ease-in-out;
 }
 
 @keyframes soulhacker {
@@ -65,38 +65,38 @@ body {
  background-size: 100vh 100vh;
  background-size: cover;
  z-index: -1;
- animation: soulhacker 55s infinite ease-in-out;
+ animation: soulhacker 121s infinite ease-in-out;
 }
 
 @keyframes soulhacker {
  0% {
   background-image: url("propse.webp");
  }
- 10% {
+ 20% {
   background-image: url("accept.webp");
  }
- 20% {
+ 37% {
   background-image: url("candle.webp");
  }
- 30% {
+ 42% {
   background-image: url("rose.webp");
  }
- 40% {
+ 48% {
   background-image: url("img1.jpg");
  }
- 50% {
+ 65% {
   background-image: url("img2.jpg");
  }
- 60% {
+ 80% {
   background-image: url("img3.jpg");
  }
- 70% {
+ 85% {
   background-image: url("img4.jpg");
  }
- 80% {
+ 88% {
   background-image: url("img5.jpg");
  }
- 90% {
+ 96% {
   background-image: url("img6.jpg");
  }
  100% {
@@ -115,18 +115,4 @@ body {
  font-family: 'Rubik Maps', sans-serif;
 }
 
- 100% {
-  background-image: url("rose.webp");
- }
-}
 
-.container {
- position: absolute;
- top: 0;
- left: 0;
- height: 100%;
- width: 100%;
- text-align: center;
- color: #850101; /* Dark red color, you can adjust the color code */
- font-family: 'Rubik Maps', sans-serif;
-}
