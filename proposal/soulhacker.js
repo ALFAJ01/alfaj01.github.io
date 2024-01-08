@@ -1,18 +1,35 @@
 var i = 0;
 var txt1 =
-  "Hi My Self ..! << Now I want to say something special to you. <<< So , Please read everything carefully...! > When I saw you for the first time < You seemed something Special to me. << As the days go < you get closer to me from my side ....! << I don't know the reason why your thoughts always resonate inside my mind...! > Everything about you is always interesting for me But Honestly Something You need to Change too...! << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in the future...! > I Love my Parents so much than anything else in this world....! << Now You are the only person whom I love equally with my parents....! >I💔 <<<! << By @محمد أفسارول الحق > |     . ";
-var speed = 75; // Adjust the value for slower text speed
+  "Hi My Self ..! << Now I want to say something special to you. <<< So, Please read everything carefully...! > When I saw you for the first time < You seemed something Special to me. << As the days go < you get closer to me from my side ....! << I don't know the reason why your thoughts always resonate inside my mind...! > Everything about you is always interesting for me But Honestly Something You need to Change too...! << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in the future...! > I Love my Parents so much than anything else in this world....! << Now You are the only person whom I love equally with my parents....! >I <<<! << By @محمد أفسارول الحق > |   . ";
+var speed = 100; // Adjusted speed for slower reading
 
 typeWriter();
 
-function typeWriter() {
+function
+ 
+typeWriter() {
   if (i < txt1.length) {
     if (txt1.charAt(i) == "<") document.getElementById("text1").innerHTML += "</br>";
-    else if (txt1.charAt(i) == ">") document.getElementById("text1").innerHTML = "";
-    else if (txt1.charAt(i) == "|") {
+    else
+ 
+if (txt1.charAt(i) == ">") document.getElementById("text1").innerHTML = "";
+    else
+ 
+if (txt1.charAt(i) == "|") {
       $(".bg_heart").css("background-image", "");
       askForAcceptance();
-    } else document.getElementById("text1").innerHTML += txt1.charAt(i);
+    } else {
+      document.getElementById("text1").innerHTML += txt1.charAt(i);
+
+      // Added pauses for emphasis
+      if (txt1.charAt(i) === "!") {
+        setTimeout(function() {}, 1000); // Pause for 1 second after exclamation marks
+      }
+      if (txt1.charAt(i) === ">" && txt1.charAt(i + 1) === "<") {
+        setTimeout(function() {}, 1500); // Pause for 1.5 seconds before new paragraphs
+      }
+    }
+
     i++;
     setTimeout(typeWriter, speed);
   }
