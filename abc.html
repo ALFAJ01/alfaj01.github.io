@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find My Main Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  #container {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .puzzle {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .piece {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .piece img {
+    width: 100%;
+    height: auto;
+  }
+  #mainPage {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <h1>Find My Main Page!</h1>
+  <p>Welcome to the puzzle game! You need to solve the puzzle to reveal the link to my main page.</p>
+  <p>Instructions:</p>
+  <ol style="text-align: left;">
+    <li>Click on each puzzle piece to reveal a part of the link.</li>
+    <li>Once all pieces are revealed, click the "Find Main Page" button.</li>
+  </ol>
+  <button onclick="revealMainPage()">Find Main Page</button>
+  <div id="mainPage">
+    <p>Congratulations! You found my main page!</p>
+    <a id="mainPageLink" href="#" target="_blank">Click here to visit it</a>
+  </div>
+  <div class="puzzle">
+    <div class="piece" onclick="shuffleMainPageLink()">
+      <img src="https://via.placeholder.com/300" alt="Piece 1">
+    </div>
+    <div class="piece" onclick="shuffleMainPageLink()">
+      <img src="https://via.placeholder.com/300" alt="Piece 2">
+    </div>
+    <div class="piece" onclick="shuffleMainPageLink()">
+      <img src="https://via.placeholder.com/300" alt="Piece 3">
+    </div>
+  </div>
+</div>
+
+<script>
+  const mainPageLinks = [
+    "https://alfaj01.github.io/md",
+    "https://example.com",
+    "https://google.com",
+    "https://bing.com",
+    "https://yahoo.com"
+  ];
+
+  function revealMainPage() {
+    document.getElementById("mainPage").style.display = "block";
+  }
+
+  function shuffleMainPageLink() {
+    const link = document.getElementById("mainPageLink");
+    const randomIndex = Math.floor(Math.random() * mainPageLinks.length);
+    link.href = mainPageLinks[randomIndex];
+  }
+</script>
+
+</body>
+</html>
