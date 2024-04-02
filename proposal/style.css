@@ -25,28 +25,12 @@ body {
  20% {
   background-image: url("accept.webp");
  }
- 37% {
+ 47% {
   background-image: url("candle.webp");
  }
- 42% {
-  background-image: url("rose.webp");
+ 70%{ background-image: url("img5.jpg");
  }
- 48% {
-  background-image: url("img1.jpg");
- }
- 65% {
-  background-image: url("img2.jpg");
- }
- 80% {
-  background-image: url("img3.jpg");
- }
- 85% {
-  background-image: url("img4.jpg");
- }
- 88% {
-  background-image: url("img5.jpg");
- }
- 96% {
+ 98% {
   background-image: url("img6.jpg");
  }
  100% {
@@ -61,8 +45,8 @@ body {
  height: 100%;
  width: 100%;
  text-align: center;
- color: #850101; /* Dark red color, you can adjust the color code */
- font-family: 'Rubik Maps', sans-serif;
+ color: #78692; /* Dark red color, you can adjust the color code */
+ font-family: 'Open Sans', sans-serif;
 }
 
 
