@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry, You Already Exhausted Your Time</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .sad-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #bdc3c7, #7f8c8d);
+    animation: change-background 8s ease-in-out infinite alternate;
+  }
+
+  @keyframes change-background {
+    0% { background: linear-gradient(to bottom, #bdc3c7, #7f8c8d); }
+    50% { background: linear-gradient(to bottom, #7f8c8d, #bdc3c7); }
+    100% { background: linear-gradient(to bottom, #bdc3c7, #7f8c8d); }
+  }
+
+  .animated-text {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    animation: slide-up 5s ease-in-out infinite;
+  }
+
+  @keyframes slide-up {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+  <div class="sad-background"></div>
+  <div class="animated-text">
+    Sorry , You already lost your time , Be patient You will definitely will get a good News Inshallah .
+
+  </div>
+</body>
+</html>
